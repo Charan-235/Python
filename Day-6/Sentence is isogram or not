@@ -1,0 +1,8 @@
+sentence = "Dermatoglyphics"
+
+
+css = ''.join(e for e in sentence.lower() if e.isalnum())
+
+iso = len(css) == len(set(css))
+
+print(iso)
