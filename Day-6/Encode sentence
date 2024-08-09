@@ -11,8 +11,3 @@ for char in message:
         encoded_message += char
 print(f"Original message: {message}")
 print(f"Encoded message: {encoded_message}")
-
-
-OUTPUT:
-Original message: Hello World
-Encoded message: Khoor Zruog
