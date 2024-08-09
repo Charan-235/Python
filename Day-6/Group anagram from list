@@ -1,0 +1,7 @@
+from collections import defaultdict
+words = ["listen", "silent", "enlist", "hello",  "drowl"]
+ag = defaultdict(list)
+for word in words:
+    ssorted = ''.join(sorted(word))
+    ag[ssorted].append(word)
+print(list(ag))
