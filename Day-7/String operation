@@ -1,0 +1,14 @@
+def interleave_strings(str1, str2):
+    result = ""
+    min_length = min(len(str1), len(str2))
+    for i in range(min_length):
+        result += str1[i] + str2[i]
+    if len(str1) > len(str2):
+        result += str1[min_length:]
+    elif len(str2) > len(str1):
+        result += str2[min_length:]
+    return result
+string1 = "abc"
+string2 = "123"
+output = interleave_strings(string1, string2)
+print(output)  
