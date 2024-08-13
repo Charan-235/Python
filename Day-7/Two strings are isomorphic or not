@@ -1,0 +1,18 @@
+str1 = "egg"
+str2 = "add"
+if len(str1) != len(str2):
+    result = False
+else: 
+    mapping_str1_to_str2 = {}
+    mapping_str2_to_str1 = {}
+    result = True
+    for i in range(len(str1)):
+        char1 = str1[i]
+        char2 = str2[i]
+        if (char1 in mapping_str1_to_str2 and mapping_str1_to_str2[char1] != char2) or \
+           (char2 in mapping_str2_to_str1 and mapping_str2_to_str1[char2] != char1):
+            result = False
+            break
+        mapping_str1_to_str2[char1] = char2
+        mapping_str2_to_str1[char2] = char1
+print(result)
