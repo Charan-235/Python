@@ -11,4 +11,3 @@ for word in words:
         line+=" "+word
 lines.append(line.ljust(width))
 print("\n".join(lines))
-            
